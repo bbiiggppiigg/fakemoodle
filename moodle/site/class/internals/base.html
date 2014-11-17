@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<{include file=./header.tpl }>
+
+  <body>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+
+    <{include file=./nav.tpl }>
+
+    <div class="container">
+    
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <{if $msg != '' }>
+        <div class="alert">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong><{ $msg }></strong>
+        </div>
+	  <{/if}>
+	  
+      <script>console.log('<{$content}>');</script>
+      <{include file=$content }>
+
+      <hr>
+
+      <footer>
+        <!--<iframe src="https://www.facebook.com/plugins/like.php?href=http://acm.cs.nthu.edu.tw"
+          scrolling="no" frameborder="0" style="border:none; width:450px; height:28px"></iframe>-->
+        <!--
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>-->
+        <g:plusone></g:plusone>
+        <p>&copy; NTHU Online Judge 2013, Templates are from Bootstrap Project
+        </p>          
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
+</html>
